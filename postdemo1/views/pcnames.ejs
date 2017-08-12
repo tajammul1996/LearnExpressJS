@@ -1,0 +1,11 @@
+<% include partials/header %>
+    <h1>Some of the pc companies are as below:</h1>
+    <% for(var i=0; i<pcn.length; i++){ %>
+    <li><%=pcn[i] %></li>
+    <% } %>
+<% include partials/footer %>
+
+<form action="addedpc" method="POST">
+    <input type="text" name="addpc" placeholder="enter pc name">
+    <button>Add PC</button>
+</form>
